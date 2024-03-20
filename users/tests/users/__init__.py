@@ -17,4 +17,11 @@ class gPAS_Client_Mock():
         return de_pseudo
 
 sys.modules['users'].pseudonymize_utils.gPAS_Client = gPAS_Client_Mock
-print('MagicMock')
+
+msg = """
+###############################################################################################################
+############## gPAS Client was Mocked for tests, can be found in /iam/tests/iam/__init__.py file ##############
+###############################################################################################################
+"""
+
+print(msg)
